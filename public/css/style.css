@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+
+table {
+  border-collapse:collapse;
+  border: 2px solid black;
+  margin: 16px auto;
+}
+table th, table td {
+  border-collapse:collapse;
+  border: 2px solid black;
+  height: 80px;
+  width: 200px;
+  font-size:24px;
+  text-align: center;
+}
+table thead {
+  background-color: skyblue;
+}
+
+span {
+  display: inline-block;
+  width: 120px;
+  text-align: center;
+}
+
+input {
+  height: 40px;
+  width: 320px;
+  padding: 8px;
+}
+
+.input {
+  padding: 8px;
+}
+
+.field {
+  margin: 8px;
+}
+
+select {
+  height: 40px;
+  width: 320px;
+  padding: 8px;
+}
+
+button {
+  height: 40px;
+  width: 120px;
+  font-size: medium;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+  color: blue;
+  font-size: medium;
+  
+}
+
+#global-header {
+  background-color: skyblue;
+}
+
+.header {
+  height: 104px;
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  line-height: 64px;
+}
+
+.main {
+  /* height: 720px; */
+  width:640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.title {
+  font-size: 32px;
+  margin: 8px;
+  text-decoration:underline;
+  text-decoration-color:skyblue;
+}
+
+.subtitle {
+  margin: 8px;
+  text-decoration:underline;
+  text-decoration-color:skyblue;
+}
+
+.result {
+  font-size: 24px;
+  margin: 0 auto;
+  width: 120px;
+}
+
+#result {
+  color: red;
+}
+
+.data {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+#rate {
+  background-color: skyblue;
+  border-radius: 40px;
+  padding: 8px;
+  text-align: center;
+}
+
