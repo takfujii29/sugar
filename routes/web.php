@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Auth::routes();
+
+Route::get('/', 'HomeController@top');
+Route::get('sugar/calc', 'UserProductsController@calc');
+Route::get('/sugar/{id}', 'UserProductsController@index')->where('id', '[0-9]+')->name('sugar.index');
+Route::get('/sugar/create', 'UserProductsController@showCreateForm');
+Route::post('/sugar/create', 'UserProductsController@create');
+Route::get('/sugar/show/{user_id}/{date}', 'UserProductsController@show');
+Route::get('/sugar/edit/{id}', 'UserProductsController@showEditForm');
+Route::post('/sugar/edit/{id}', 'UserProductsController@edit');
+Route::get('/sugar/delete/{id}', 'UserProductsController@delete');
+
+Route::get('/home', 'HomeController@index')->name('home');
