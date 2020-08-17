@@ -83,7 +83,7 @@
             <td>{{$userProduct->name}}</td>
             <td>{{$userProduct->sugar}}</td>
             <td>{{$userProduct->amount}}</td>
-            <td><a href="/sugar/edit/{{$userProduct->id}}">更新</a></td>
+            <td><a href="/sugar/edit/{{$userProduct->id}}">編集</a></td>
             <td><a href="/sugar/delete/{{$userProduct->id}}">削除</a></td>
           </tr>
           @endforeach

@@ -5,7 +5,7 @@ services:
     container_name: sugar
     build: ./php
     volumes:
-      - ../:/var/www/app
+      - ./:/var/www/app
 
   nginx:
     image: nginx
